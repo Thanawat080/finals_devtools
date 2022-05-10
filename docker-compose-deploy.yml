@@ -1,0 +1,10 @@
+version: "3"  # optional since v1.27.0
+services:
+  frontend:
+    image: thanawat12/devtools-62070080-frontend:1.0.0
+    ports:
+      - "8889:80"
+  backend:
+    image: thanawat12/devtools-62070080-backend:1.0.0
+    ports:
+      - "3333:3000"
