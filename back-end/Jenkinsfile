@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('Pull Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Thanawat080/finals_devtools.git'
+            }
+        }
+        stage('deploy') {
+            steps {
+                sh '''
+                docker-compose -f docker-compose-build.yml build backend
+                docker-compose -f docker-compose-deploy.yml up -d backend
+                '''
+            }
+        }
+
+
+        stage('Notification') {
+            steps {
+                echo 'all state success'
+            }
+        }
+    }
+}
