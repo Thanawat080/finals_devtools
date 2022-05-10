@@ -65,11 +65,11 @@ services:
 ใช้ branch ที่ชื่อ ว่า main
 ### front end
   ```
- Script Path  ให้เปลี่ยนเป็น ./front-end/jenkinsfile
+ Script Path  ให้เปลี่ยนเป็น ./front-end/Jenkinsfile
   ```
 ### back end
   ```
- Script Path  ให้เปลี่ยนเป็น ./back-end/jenkinsfile
+ Script Path  ให้เปลี่ยนเป็น ./back-end/Jenkinsfile
   ```
 ###  ในกรณีที่ run jenkins ไม่ได้ ให้ใช้ docker เลย
 คำสั่งสำหรับ front-end
