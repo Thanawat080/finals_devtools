@@ -61,6 +61,16 @@ services:
   ```
 เขียนแบบ scm ไว้แต่ถ้า อยากได้แบบ ไม่ใช้ scm ให้เปลี่ยน ตรง pull code เป็น  git branch: 'main', url: 'https://github.com/Thanawat080/finals_devtools.git' ของทั้ง frontend และ backend
   ```
+###  การ config jenkin
+ใช้ branch ที่ชื่อ ว่า main
+### front end
+  ```
+ Script Path  ให้เปลี่ยนเป็น ./front-end/jenkinsfile
+  ```
+### back end
+  ```
+ Script Path  ให้เปลี่ยนเป็น ./back-end/jenkinsfile
+  ```
 ###  ในกรณีที่ run jenkins ไม่ได้ ให้ใช้ docker เลย
 คำสั่งสำหรับ front-end
   ```
