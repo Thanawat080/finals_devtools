@@ -107,7 +107,7 @@ export default {
     },
     created() {
         axios
-            .get('http://localhost:3000/information/' + localStorage.getItem('id'))
+            .get('http://localhost:3333/information/' + localStorage.getItem('id'))
             .then((res) => {
                 console.log(res.data[0])
                 this.prefix = res.data[0].prefix

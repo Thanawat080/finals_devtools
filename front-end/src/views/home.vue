@@ -245,7 +245,7 @@ export default {
              &&  this.card != ''  &&  this.day != ''  &&  this.mount != ''  &&  this.year != ''  
              &&  this.address != ''  &&  this.phone != ''  &&  this.dis != ''  &&  this.dis1 != ''  &&  this.dis2 != ''){
             axios
-                .post("http://localhost:3000/information", {
+                .post("http://localhost:3333/information", {
                     prefix: this.prefix,
                     fname: this.fname,
                     lname: this.lname,
