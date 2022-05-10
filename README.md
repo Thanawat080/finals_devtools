@@ -56,3 +56,20 @@ services:
       - "3333:3000"
   ```
 โดยจะทำการ สร้าง container ส่วนของ front end ไปที่ port 8889 และ backend ไปที่ port 3333
+
+###  jenkin
+  ```
+เขียนแบบ scm ไว้แต่ถ้า อยากได้แบบ ไม่ใช้ scm ให้เปลี่ยน ตรง pull code เป็น  git branch: 'main', url: 'https://github.com/Thanawat080/finals_devtools.git' ของทั้ง frontend และ backend
+  ```
+###  ในกรณีที่ run jenkins ไม่ได้ ให้ใช้ docker เลย
+คำสั่งสำหรับ front-end
+  ```
+docker-compose -f docker-compose-build.yml build frontend
+docker-compose -f docker-compose-deploy.yml up -d frontend
+  ```
+
+คำสั่งสำหรับ backend-end
+  ```
+docker-compose -f docker-compose-build.yml build backend
+docker-compose -f docker-compose-deploy.yml up -d backend
+  ```
