@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pull Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Thanawat080/finals_devtools.git'
+                checkout scm
             }
         }
         stage('deploy') {
